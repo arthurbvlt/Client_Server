@@ -1,0 +1,40 @@
+@charset "UTF-8";
+body {
+	margin: 0;
+	text-align: center;
+}
+table{
+    width: 100%;
+    height: 10%;
+    background-color: #ffffff14;
+    border-radius: 32px;
+}
+.table{
+	border: #0000;
+}
+#img{
+    background-image: url('../img/SL-090119-22970-06.jpg');
+	background-position: center;
+}
+.fontColor{
+    color: #1cbf00;
+}
+.header{
+	position: relative;
+    height: 6rem;
+    width: 100%;
+    background-color: #414141;
+}
+.container{
+	margin-top: 2rem;
+}
+.bouton{
+	position: absolute;
+    left: 89%;
+    top: 31%;
+    border-radius: 32px;
+    width: 6%;
+}
+.bouton:hover{
+	background-color: #1cbf00;
+}

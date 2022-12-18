@@ -1,0 +1,44 @@
+@charset "UTF-8";
+.header{
+    background-color: #5B4E9B;
+}
+
+body {
+	margin: 0;
+	text-align: center;
+}
+
+table{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+.container{
+	margin-top: 2rem;
+}
+.header{
+	position: relative;
+    height: 6rem;
+    width: 100%;
+    background-color: #414141;
+}
+#img{
+    background-image: url('../img/SL-090119-22970-06.jpg');
+	background-position: center;
+}
+.bouton{
+	position: absolute;
+    left: 89%;
+    top: 31%;
+    border-radius: 32px;
+    width: 6%;
+}
+.bouton:hover{
+	background-color: #1cbf00;
+}
+.fontColor{
+    color: #1cbf00;
+}
+#submitScore{
+	margin-top: 7rem;
+}

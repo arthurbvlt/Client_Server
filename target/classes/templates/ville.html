@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+		rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+		crossorigin="anonymous">
+		<meta charset="UTF-8">
+		<link th:href="@{/css/ville.css}" rel="stylesheet" type="text/css" media="all"/>
+		<title>Modifier</title>
+	</head>
+	<body id="img">
+		<button onclick="window.location.href='/listVilles'" class=bouton><</button>
+		<div class="container">
+			<form method="post">
+			    <table class="fontColor table" style="border: #0000;">
+			        <tr>
+			            <th>Nom de l'attribut</th>
+			            <th>Valeur de l'attribut</th>
+			            <th>Modifier</th>
+			        </tr>
+			        <tr>
+			            <td>Nom de la commune</td>
+			            <td th:text="${ville.nomCommune}"></td>
+			            <td>
+			                <input type="text" th:value="${ville.nomCommune}" name="nomCommune" />
+			            </td>
+			        </tr>
+			        <tr>
+			            <td>Code postal</td>
+			            <td th:text="${ville.codePostal}"></td>
+			            <td>
+			                <input type="text" th:value="${ville.codePostal}" name="codePostal" />
+			            </td>
+			        </tr>
+			        <tr>
+			            <td>Libellé d'acheminement</td>
+			            <td th:text="${ville.libelleAcheminement}"></td>
+			            <td>
+			                <input type="text" th:value="${ville.libelleAcheminement}" name="libelleAcheminement" />
+			            </td>
+			        </tr>
+			        <tr>
+			            <td>Ligne</td>
+			            <td th:text="${ville.ligne}"></td>
+			            <td>
+			                <input type="text" th:value="${ville.ligne}" name="ligne"/>
+					  	</td>
+					</tr>
+					<tr>
+						<td>Latitude</td>
+						<td th:text="${ville.coordonnee.latitude}"></td>
+						<td>
+						  <input type="text" th:value="${ville.coordonnee.latitude}" name="latitude"/>
+						</td>
+					</tr>
+					<tr>
+						<td>Longitude</td>
+						<td th:text="${ville.coordonnee.longitude}"></td>
+						<td>
+						  <input type="text" th:value="${ville.coordonnee.longitude}" name="longitude"/>
+						</td>
+					</tr>
+				</table>
+				<button class="valider" type="submit" onclick="changeSuccess()">Valider les changements</button>
+			</form>
+		</div>
+		<script type="text/javascript">
+			function changeSuccess() {
+			  	alert("Les changements ont bien été effectués!");
+			}	
+		</script>
+	</body>
+</html>

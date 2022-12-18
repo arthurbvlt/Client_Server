@@ -1,0 +1,45 @@
+@charset "UTF-8";
+body {
+	margin-top: 10rem;
+	text-align: center;
+}
+
+table{
+    width: 100%;
+    height: 10%;
+    background-color: #ffffff14;
+    border-radius: 32px;
+}
+
+.bouton{
+	position: absolute;
+    top: 4rem;
+    left: 11rem;
+    border-radius: 32px;
+    width: 6%;
+}
+.bouton:hover{
+	background-color: #1cbf00;
+}
+.valider{
+    margin-top: 4rem;
+    border-radius: 34px;
+    width: 20%;
+}
+.valider:hover{
+	background-color: #1cbf00;
+}
+
+#img{
+    background-image: url('../img/SL-090119-22970-06.jpg');
+    background-position: center;
+}
+.fontColor{
+    color: #1cbf00;
+}
+.table td:last-child{
+  width: 50%;
+}
+input{
+    width: 100%;
+}
