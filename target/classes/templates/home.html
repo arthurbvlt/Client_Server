@@ -33,7 +33,7 @@
 		</form>
 		<div style="margin-top: 4rem;text-align: center;">
 		  <p style="display: inline-block;">Distance :</p>
-		  <div style="display: inline-block;" th:text="${distance}"></div>
+		  <div style="display: inline-block;" th:text="${distance != null ? distance : 0}"></div>
 		  <p style="display: inline-block;">km</p>		
 		</div>
 	</div>
